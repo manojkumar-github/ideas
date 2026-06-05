@@ -1,0 +1,21 @@
+title: My Ideas Blog
+description: A blog about my ideas and projects
+theme: jekyll-theme-minimal
+
+# Collections for blog posts
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title/
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: "post"
+      category: "blog"
+
+# Permalink structure
+permalink: /:year/:month/:day/:title/
