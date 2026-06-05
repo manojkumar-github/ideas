@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="hero">
+    <h1>{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+</div>
+
+<div class="featured-posts">
+    <h2>Latest Posts</h2>
+    <div class="posts-grid">
+        {% for post in site.posts limit: 6 %}
+            <article class="post-card">
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+            </article>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="cta">
+    <h2>Ready to explore all posts?</h2>
+    <a href="{{ '/blog/' | relative_url }}" class="btn btn-primary">View All Blog Posts</a>
+</div>
+
+{{ content }}

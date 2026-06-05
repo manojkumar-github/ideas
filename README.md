@@ -1,16 +1,65 @@
-# GitHub Pages
+# My Ideas Blog
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+Welcome to my personal blog built with GitHub Pages and Jekyll!
 
-Hey manojkumar-github!
+## About
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+This is a space where I share my ideas, thoughts, and projects. Feel free to explore and connect with me.
 
-Remember, it's self-paced so feel free to take a break! ☕️
+## Blog Posts
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/manojkumar-github/skills-github-pages/issues/1)
+You can find all my blog posts in the [Blog](./blog) section. New posts are published regularly.
 
+## Getting Started
+
+### Running Locally
+
+To run this blog locally:
+
+```bash
+gem install bundler jekyll
+bundle exec jekyll serve
+```
+
+Then open [http://localhost:4000/ideas](http://localhost:4000/ideas) in your browser.
+
+### Adding New Posts
+
+Create a new markdown file in the `_posts` folder with the naming convention:
+`YYYY-MM-DD-title.md`
+
+Example:
+```markdown
+---
+title: My First Post
+date: 2026-06-05
+categories: [tutorial]
+tags: [github, pages]
 ---
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+Your blog content here...
+```
 
+## Repository Structure
+
+```
+ideas/
+├── _config.yml          # Jekyll configuration
+├── _layouts/            # HTML layouts
+│   ├── default.html
+│   ├── post.html
+│   └── home.html
+├── _posts/              # Blog posts
+│   └── YYYY-MM-DD-title.md
+├── _includes/           # Reusable components
+├── assets/              # CSS, JS, images
+│   └── style.css
+├── blog/                # Blog index page
+│   └── index.html
+├── index.md             # Homepage
+└── README.md            # This file
+```
+
+## License
+
+MIT License - Feel free to use this template for your own blog!
